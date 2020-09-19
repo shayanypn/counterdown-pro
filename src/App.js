@@ -1,25 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <form>
+        <label htmlFor="countdown">Countdown:</label>
+        <input type="text" name="time" placeholder="(Min)" />
+        <button type="button">START</button>
+      </form>
+      <section>
+        <p>More than halfway there!</p>
+        <article>
+          <div className="counter">
+            <span>5</span>
+            <span>1</span>
+            <span>:</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+          <button>Play/Pause</button>
+        </article>
+      </section>
+      <footer>
+        <button className="active">1X</button>
+        <button>1.5X</button>
+        <button>2X</button>
+      </footer>
+    </main>
   );
 }
 
