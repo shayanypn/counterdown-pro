@@ -20,6 +20,10 @@ form {
   margin-bottom: 1em;
 }
 
+form fieldset {
+  border: none;
+}
+
 form button {
   background: #54b8a1;
   border-color: #54b8a1;

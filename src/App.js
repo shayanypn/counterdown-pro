@@ -1,14 +1,11 @@
 import React from 'react';
+import Form from './components/Form';
 import './App.css';
 
 const App = () => {
   return (
     <main>
-      <form>
-        <label htmlFor="countdown">Countdown:</label>
-        <input type="text" name="time" placeholder="(Min)" />
-        <button type="button">START</button>
-      </form>
+      <Form onChange={value => console.log(value)} />
       <section>
         <p>More than halfway there!</p>
         <article>
