@@ -4,6 +4,9 @@ import Timer from './components/Timer';
 import Speed from './components/Speed';
 import './App.css';
 
+import PauseIcon from './assets/pause.svg';
+import PlayIcon from './assets/play.svg';
+
 const Message = ({ seconds, middle }) => (
   <React.Fragment>
     {(seconds < middle && (seconds > 0 && middle > 0)) ? <p>More than halfway there!</p> : null}
@@ -54,7 +57,9 @@ const App = () => {
             className={`${isBliking() ? 'blinking' : ''} ${isRed() ? 'red' : ''}`} 
             seconds={model.seconds}
           />
-          <button onClick={() => setPause(prevStat => !prevStat)}>{pause ? 'play' : 'pause'}</button>
+          <button className="btn-pause" onClick={() => setPause(prevStat => !prevStat)}>
+            <img src={pause ? PlayIcon : PauseIcon} alt="pause/resume" />
+          </button>
         </article>
       </section>
       <footer>
