@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import Form from './index';
 
 describe('Form Component', () => { 
@@ -8,9 +8,9 @@ describe('Form Component', () => {
     expect(wrapper.exists()).toBe(true);
   });
 
-  test('form work correctly', () => {
+  test('Form work correctly', () => {
     const onChangeMock = jest.fn();
-    const wrapper = mount(<Form />);
+    const wrapper = shallow(<Form />);
     wrapper.setProps({
       onChange: onChangeMock,
     });

@@ -66,10 +66,21 @@ article button {
   top: 30px;
 }
 
-.counter {
-
-}
 .counter span {
   font-weight: bold;
   font-size: 80px;
+}
+
+.counter.blinking {
+  animation: blinker 1s linear infinite;
+}
+
+.counter.red span {
+  color: red;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }

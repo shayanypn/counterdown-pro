@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import Timer from './index';
 
 describe('Timer Component', () => { 
@@ -10,7 +10,7 @@ describe('Timer Component', () => {
 
   test('Timer work correctly for 12:34', () => {
     const mockData = {
-      time: 743,
+      seconds: 743,
     };
     const wrapper = shallow(<Timer {...mockData} />);
 
@@ -20,7 +20,7 @@ describe('Timer Component', () => {
 
   test('Timer work correctly for invalid number ab:cd', () => {
     const mockData = {
-      time: -12,
+      seconds: -12,
     };
     const wrapper = shallow(<Timer {...mockData} />);
 
