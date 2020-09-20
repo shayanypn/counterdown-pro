@@ -2,14 +2,12 @@ import React, { useState, useEffect } from 'react';
 import Form from './components/Form';
 import Timer from './components/Timer';
 import Speed from './components/Speed';
-import './App.css';
-
 import PauseIcon from './assets/pause.svg';
 import PlayIcon from './assets/play.svg';
 
 const Message = ({ seconds, middle }) => (
   <React.Fragment>
-    {(seconds < middle && (seconds > 0 && middle > 0)) ? <p>More than halfway there!</p> : null}
+    {(seconds <= middle && (seconds > 0 && middle > 0)) ? <p>More than halfway there!</p> : null}
     {(seconds === 0 && middle > 0) ? <p>Time’s up!</p> : null}
   </React.Fragment>
 );
@@ -32,17 +30,28 @@ const App = () => {
     setPause(false);
   }
 
-  const isBliking = () => (model.seconds < 10 && model.seconds !== 0 && model.middle > 0);
-  const isRed = () => (model.seconds < 20 && model.seconds !== 0 && model.middle > 0);
+  const timerClassname = () => {
+    const classes = [];
+
+    if (model.seconds <= 10 && model.seconds !== 0 && model.middle > 0) {
+      classes.push('blinking')
+    }
+
+    if (model.seconds <= 20 && model.seconds !== 0 && model.middle > 0) {
+      classes.push('red')      
+    }
+
+    return classes.join(' ');
+  }
 
   useEffect(() => {
     const timer = setTimeout(() => {
       if (model.seconds > 0 && !pause)
-        setModel(prevStat => ({...prevStat, seconds: --prevStat.seconds}))
+        setModel(prevStat => ({...prevStat, seconds: (prevStat.seconds-1)}))
     }, speed);
     // Clear timeout if the component is unmounted
     return () => clearTimeout(timer);
-  }, [model.seconds, pause, speed]);
+  }, [model, model.seconds, pause, speed]);
 
   return (
     <main>
@@ -54,7 +63,7 @@ const App = () => {
         />
         <article>
           <Timer
-            className={`${isBliking() ? 'blinking' : ''} ${isRed() ? 'red' : ''}`} 
+            className={timerClassname()} 
             seconds={model.seconds}
           />
           <button className="btn-pause" onClick={() => setPause(prevStat => !prevStat)}>
