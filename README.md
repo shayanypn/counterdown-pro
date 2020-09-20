@@ -1,5 +1,7 @@
 # Counterdown Pro
 
+[![Build Status](https://travis-ci.com/shayanypn/counterdown-pro.svg?branch=master)](https://travis-ci.com/shayanypn/counterdown-pro)
+
 Simple counter down with some other features
 
 [Preview](https://shayanypn.github.io/counterdown-pro/)
