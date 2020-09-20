@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/counterdown-pro/static/css/main.05e2adaa.chunk.css",
+    "main.js": "/counterdown-pro/static/js/main.d6ae5a80.chunk.js",
+    "main.js.map": "/counterdown-pro/static/js/main.d6ae5a80.chunk.js.map",
+    "runtime-main.js": "/counterdown-pro/static/js/runtime-main.466c34fb.js",
+    "runtime-main.js.map": "/counterdown-pro/static/js/runtime-main.466c34fb.js.map",
+    "static/js/2.6ea80ad1.chunk.js": "/counterdown-pro/static/js/2.6ea80ad1.chunk.js",
+    "static/js/2.6ea80ad1.chunk.js.map": "/counterdown-pro/static/js/2.6ea80ad1.chunk.js.map",
+    "index.html": "/counterdown-pro/index.html",
+    "precache-manifest.27f24a69a1d9bf35e3d764e398848bcc.js": "/counterdown-pro/precache-manifest.27f24a69a1d9bf35e3d764e398848bcc.js",
+    "service-worker.js": "/counterdown-pro/service-worker.js",
+    "static/css/main.05e2adaa.chunk.css.map": "/counterdown-pro/static/css/main.05e2adaa.chunk.css.map",
+    "static/js/2.6ea80ad1.chunk.js.LICENSE.txt": "/counterdown-pro/static/js/2.6ea80ad1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.466c34fb.js",
+    "static/js/2.6ea80ad1.chunk.js",
+    "static/css/main.05e2adaa.chunk.css",
+    "static/js/main.d6ae5a80.chunk.js"
+  ]
+}
