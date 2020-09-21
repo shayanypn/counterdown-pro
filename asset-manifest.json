@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/counterdown-pro/static/css/main.a9cb42fb.chunk.css",
-    "main.js": "/counterdown-pro/static/js/main.9247aea9.chunk.js",
-    "main.js.map": "/counterdown-pro/static/js/main.9247aea9.chunk.js.map",
+    "main.js": "/counterdown-pro/static/js/main.7c64231d.chunk.js",
+    "main.js.map": "/counterdown-pro/static/js/main.7c64231d.chunk.js.map",
     "runtime-main.js": "/counterdown-pro/static/js/runtime-main.466c34fb.js",
     "runtime-main.js.map": "/counterdown-pro/static/js/runtime-main.466c34fb.js.map",
     "static/js/2.fe21efd6.chunk.js": "/counterdown-pro/static/js/2.fe21efd6.chunk.js",
     "static/js/2.fe21efd6.chunk.js.map": "/counterdown-pro/static/js/2.fe21efd6.chunk.js.map",
     "index.html": "/counterdown-pro/index.html",
-    "precache-manifest.21a2ab3cc709bc7ff767b45ad4599364.js": "/counterdown-pro/precache-manifest.21a2ab3cc709bc7ff767b45ad4599364.js",
+    "precache-manifest.c58cd9a74d6ae73d1854a48a0f7603ed.js": "/counterdown-pro/precache-manifest.c58cd9a74d6ae73d1854a48a0f7603ed.js",
     "service-worker.js": "/counterdown-pro/service-worker.js",
     "static/css/main.a9cb42fb.chunk.css.map": "/counterdown-pro/static/css/main.a9cb42fb.chunk.css.map",
     "static/js/2.fe21efd6.chunk.js.LICENSE.txt": "/counterdown-pro/static/js/2.fe21efd6.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.466c34fb.js",
     "static/js/2.fe21efd6.chunk.js",
     "static/css/main.a9cb42fb.chunk.css",
-    "static/js/main.9247aea9.chunk.js"
+    "static/js/main.7c64231d.chunk.js"
   ]
 }
