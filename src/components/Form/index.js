@@ -5,9 +5,25 @@ const Form = ({ onChange }) => {
   const [value, setValue] = useState('');
   const [error, setError] = useState('');
 
-  const handleSubmit = () => {
-    if (/^([0-5][0-9])(:[0-5][0-9])?$/.test(value)) {
-      onChange(value);
+  const handleSubmit = (e) => {
+    let time = '';
+
+    if (e) {
+      e.preventDefault();
+    }
+
+    if (/^([0-9])?$/.test(value)) {
+      time = `0${value}:00`;
+    }else if (/^([0-5][0-9])?$/.test(value)) {
+      time = `${value}:00`;
+    }else if (/^([0-5][0-9])(:[0-5])?$/.test(value)){
+      time = `${value}0`;
+    }else if (/^([0-5][0-9])(:[0-5][0-9])?$/.test(value)){
+      time = value;
+    }
+
+    if (time !== '') {
+      onChange(time);
       setValue('');
       setError(null);
     } else {
@@ -16,7 +32,7 @@ const Form = ({ onChange }) => {
   }
 
   return (
-    <form>
+    <form onSubmit={e => handleSubmit(e)}>
       <fieldset>
         <label htmlFor="countdown">Countdown:</label>
         <input
